@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block title %}
+    <!-- page title -->
+<section class="page-title-alt bg-primary position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-white font-tertiary">About Me</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <img src="{% static 'images/illustrations/leaf-bg-top.png' %}" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="{% static 'images/illustrations/dots-group-sm.png' %}" alt="illustrations" class="bg-shape-2">
+    <img src="{% static 'images/illustrations/leaf-yellow.png' %}" alt="illustrations" class="bg-shape-3">
+    <img src="{% static 'images/illustrations/leaf-orange.png' %}" alt="illustrations" class="bg-shape-4">
+    <img src="{% static 'images/illustrations/dots-group-cyan.png' %}" alt="illustrations" class="bg-shape-5">
+    <img src="{% static 'images/illustrations/leaf-cyan-lg.png' %}" alt="illustrations" class="bg-shape-6">
+  </section>
+  <!-- /page title -->
+  
+  <!-- about -->
+  <section class="section pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Hello and welcome to the About Section!<br><br> My name is TjPradeep <strong>I am a B.Tech student interested in exploring the details of programming languages and discovering the
+            latest technologies. I have a strong curiosity for coding and enjoy using my skills to experiment with various
+            projects. I am committed to expanding my knowledge in the field of programming and staying up to date with
+            emerging trends. With a passion for learning and a drive to excel, I am eager to contribute to the dynamic world
+            of technology and make a meaningful impact.<p>
+        </div>
+        <div class="col-md-4 text-center drag-lg-top">
+          <div class="shadow-down mb-4">
+           <!-- <img src="{% static '2603.jpg' %}" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
+          </div>
+          <img src="{% static 'imag/signature.png' %}" alt="signature" class="img-fluid">-->
+          <h4>Thanagajeyapradeep M</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+  
+  <!-- Work Process -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Work Process</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+          <div class="">
+            <img src="{% static 'images/icons/plan.png' %}" class="mb-4" alt="icon">
+            <h4 class="mb-4">Hands-on Project Experience</h4>
+            <p>Practical application is a core aspect of AI education. Students engage in hands-on projects where they collect, preprocess, and analyze data, design and implement AI models, and iterate through experimentation to optimize model performance. This project-based approach hones their skills and problem-solving abilities.<br></p>
+            <p></p>  
+            <p></p><br>
+        
+            
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+          <img src="{% static 'images/icons/design.png' %}" class="mb-4" alt="icon">
+          <h4 class="mb-4">Learning and Skill Developmen</h4>
+          <p>AI student start by acquiring a solid foundation in concepts like machine learning, neural networks, statistics, and programming languages (often Python).also become proficient in using popular AI libraries and frameworks such as TensorFlow and PyTorch. This learning phase sets the stage for their practical work.</p><br><br>
+          <p></p><br>
+          <p>.</p> <br> 
+          
+          
+          
+        </div>
+        <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+          <img src="{% static 'images/icons/print.png' %}" class="mb-4" alt="icon">
+          <h4 class="mb-4">Continuous Learning and Adaptation</h4>
+          <p>AI is a rapidly evolving field with new techniques, algorithms, and research emerging frequently. AI students must stay updated with the latest trends by reading research papers, attending conferences, and engaging in online AI communities. This culture of continuous learning and adaptation is crucial to remaining competitive and relevant in the field.<br>
+<br><br> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ./Work Process 
+  
+  <!--team 
+
+  
+  <section class="section bg-cover" data-background="{% static 'images/backgrounds/team-bg.png' %}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">My Team</h2>
+        </div>
+        {% for team in team %}
+
+            
+
+                <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+                  <div class="card text-center">
+                     <img src="{% static 'images/team/member-1.png' %}" class="card-img-top">
+                     <a href="{{ team.pictures.url }}">
+                      {% if team.name != Vidhya %}
+                        <img src="{{ team.pictures.url }}" alt="shirts" style="max-height:200px" class="card-img-top">
+                        <div class="card-body">
+                        <h4 class="card-title"> {{team.name}} </h4>
+                        <p class="text-light font-secondary">{{team.expertise}}</p>
+                        <p class="text-light font-secondary">{{team.experience}}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>-->
+
+            
+
+        {% endfor %}
+
+        <!-- <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+          <div class="card text-center">
+            <img src="{% static 'images/team/member-2.png' %}" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Jack Schenziwe</h4>
+              <p class="text-light font-secondary">Project Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+          <div class="card text-center">
+            <img src="{% static 'images/team/member-3.png' %}" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Jack Schenziwe</h4>
+              <p class="text-light font-secondary">Project Manager</p>
+            </div>
+          </div>
+        </div> -->
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- /team -->
+  
+  <!-- <hr><hr> -->
+
+
+  <!-- clients -->
+  
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">My Clients</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="client-logo-slider d-flex align-items-center">
+            <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/APC.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/Bea.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/Bos.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/ETH.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/HCL.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/kva.jpg' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/Min.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/sev.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/Ski.png' %}" alt="client-logo"></a>
+          <a href="{% static 'demo:contact.html' %}" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+              src="{% static  'imag/resize/tal.png' %}" alt="client-logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /clients -->
+  
+      
+    {% endblock %}
+    
+    
+</body>
+</html>
